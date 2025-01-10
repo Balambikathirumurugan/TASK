@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABBREVIATIONS</title>
+  <link rel="stylesheet" href="m1.css">
+</head>
+<body>
+<header>
+  <h1>ABBREVIATIONS</h1>
+</header>
+  
+    
+
+
+
+    
+  
+  <script>
+    // Function to update output based on the button clicked
+    function showInfo(device) {
+      const outputDiv = document.getElementById('output-' + device);
+      let message = '';
+
+      // Set the message based on the device
+      switch (device) {
+        case 'CPU':
+          message = 'Central Processing Unit';
+          break;
+        case 'GPU':
+          message = 'Graphics Processing Unit';
+          break;
+        case 'RAM':
+          message = 'Random Access Memory';
+          break;
+        case 'ROM':
+          message = 'Read Only Memory';
+          break;
+        case 'HDD':
+          message = 'Hard Disk Drive';
+          break;
+        case 'SSD':
+          message = 'Solid State Drive';
+          break;
+        case 'USB':
+          message = 'Universal Serial Bus';
+          break;
+        case 'LAN':
+          message = 'Local Area Network';
+          break;
+        case 'WAN':
+          message = 'Wide Area Network';
+          break;
+        case 'WLAN':
+          message = 'Wireless Local Area Network';
+          break;
+        case 'ISP':
+          message = 'Internet Service Provider';
+          break;
+        case 'DNS':
+          message = 'Domain Name System';
+          break;
+        case 'HTTP':
+          message = 'Hypertext Transfer Protocol';
+          break;
+        case 'HTTPS':
+          message = 'Hypertext Transfer Protocol Secure';
+          break;
+       case 'FTP':
+          message = 'File Transfer Protocol';
+          break;
+       case 'TCP':
+          message = 'Transmission Control Protocol';
+          break;
+       case 'IP':
+          message = 'Internet Protocol';
+          break;
+       case 'SMTP':
+          message = 'Simple Mail Transfer Protocol';
+          break;
+       case 'IMAP':
+          message = 'Internet Message Access Protocol';
+          break;
+       case 'POP':
+          message = 'Post Office Protocol';
+          break;
+       case 'VPN':
+          message = 'Virtual Private Network ';
+          break;
+       case 'HTML':
+          message = 'Hypertext Markup Language';
+          break;
+      case 'CSS':
+          message = 'Cascading style Sheet';
+          break;
+      case 'PHP':
+          message = 'Hpertext Preprocessor';
+          break;
+      case 'SQL':
+          message = 'Structured Query Language';
+          break;
+      case 'IDE':
+          message = 'Integrated Development Environment';
+          break;
+      case 'API':
+          message = 'Application Programming Interface';
+          break;
+     case 'SDK':
+          message = 'Software Development Kit';
+          break;
+     case 'GUI':
+          message = 'Graphical User Interface';
+          break;
+     case 'CLI':
+          message = 'Command Line Interface';
+          break;
+     case 'UI':
+          message = 'User Interface';
+          break; 
+     case 'UX':
+          message = 'User Experience';
+          break;
+     case 'OS':
+          message = 'Operating System';
+          break;
+     case 'BIOS':
+          message = 'Basic Input/Output System';
+          break;
+     case 'UEFI':
+          message = 'Unified EXtensible Firmware Interface';
+          break;
+    case 'ACPI':
+          message = 'Advanced Configuration and Power interface';
+          break;
+    case 'SATA':
+          message = 'Serial Advanced Technology Attachment';
+          break;
+    case 'RAID':
+          message = 'Redundant Array of Independent Disks';
+          break;
+    case 'DNSSEC':
+          message = 'Domain Name System Security Extensions';
+          break;
+    case 'SFTP':
+          message = 'Secure File Transfer Protocol';
+          break;
+    case 'SSH':
+          message = 'Secure Shell';
+          break;
+    case 'TLS':
+          message = 'Transport Layer Security';
+          break;
+    case 'VOIP':
+          message = 'Voice Over Internet Protocol';
+          break;
+    case 'VLAN':
+          message = 'Virtual Local Area Network';
+          break;
+    case 'NAT':
+          message = 'Network Address Translation';
+          break;
+    case 'DNSBL':
+          message = 'Domain Name System Blacklist';
+          break;
+   case 'SMTPS':
+          message = 'Simple Mail Transfer Protocol secure';
+          break;
+    case 'XMPP':
+          message = 'Extensible Messaging and Pressence Protocol';
+          break;
+    case 'JSON':
+          message = 'JavaScript Object Notation';
+          break;
+    case 'XML':
+          message = 'Extensible Markup Language';
+          break;
+    case 'AJAX':
+          message = 'Asynchronous Javascript and XML';
+          break;
+    case 'APIPA':
+          message = 'Automatic Private IP Addressing';
+          break;
+   case 'DHCP':
+          message = 'Dynamic Host Configuration Protocol';
+          break;
+    case 'MAC':
+          message = 'Media Access Control';
+          break;
+    case 'MIME':
+          message = 'Multipurpose Internet Mail Extensions';
+          break;
+    case 'NTP':
+          message ='Network Time Protocol';
+          break;
+    case 'POP3':
+          message = 'Post Office Protocol version 3';
+          break;
+       }
+      
+      // Update the content of the corresponding output div
+      outputDiv.textContent = message;
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Create buttons for each device -->
+  <div class="container">
+    <div class="button-container">
+      <button onclick="showInfo('CPU')">CPU</button>
+      <div id="output-CPU" class="output"></div> <!-- Output for CPU -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('GPU')">GPU</button>
+      <div id="output-GPU" class="output"></div> <!-- Output for GPU -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('RAM')">RAM</button>
+      <div id="output-RAM" class="output"></div> <!-- Output for RAM -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('ROM')">ROM</button>
+      <div id="output-ROM" class="output"></div> <!-- Output for ROM -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('HDD')">HDD</button>
+      <div id="output-HDD" class="output"></div> <!-- Output for HDD -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('SSD')">SSD</button>
+      <div id="output-SSD" class="output"></div> <!-- Output for SSD -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('USB')">USB</button>
+      <div id="output-USB" class="output"></div> <!-- Output for USB -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('LAN')">LAN</button>
+      <div id="output-LAN" class="output"></div> <!-- Output for LAN -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('WAN')">WAN</button>
+      <div id="output-WAN" class="output"></div> <!-- Output for WAN -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('WLAN')">WLAN</button>
+      <div id="output-WLAN" class="output"></div> <!-- Output for WLAN -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('ISP')">ISP</button>
+      <div id="output-ISP" class="output"></div> <!-- Output for ISP -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('DNS')">DNS</button>
+      <div id="output-DNS" class="output"></div> <!-- Output for DNS -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('HTTP')">HTTP</button>
+      <div id="output-HTTP" class="output"></div> <!-- Output for HTTP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('HTTPS')">HTTPS</button>
+      <div id="output-HTTPS" class="output"></div> <!-- Output for HTTPS -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('FTP')">FTP</button>
+      <div id="output-FTP" class="output"></div> <!-- Output for FTP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('TCP')">TCP</button>
+      <div id="output-TCP" class="output"></div> <!-- Output for TCP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('IP')">IP</button>
+      <div id="output-IP" class="output"></div> <!-- Output for IP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('SMTP')">SMTP</button>
+      <div id="output-SMTP" class="output"></div> <!-- Output for SMTP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('IMAP')">IMAP</button>
+      <div id="output-IMAP" class="output"></div> <!-- Output for IMAP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('POP')">POP</button>
+      <div id="output-POP" class="output"></div> <!-- Output for POP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('VPN')">VPN</button>
+      <div id="output-VPN" class="output"></div> <!-- Output for VPN -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('HTML')">HTML</button>
+      <div id="output-HTML" class="output"></div> <!-- Output for HTML -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('CSS')">CSS</button>
+      <div id="output-CSS" class="output"></div> <!-- Output for CSS -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('PHP')">PHP</button>
+      <div id="output-PHP" class="output"></div> <!-- Output for PHP -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('SQL')">SQL</button>
+      <div id="output-SQL" class="output"></div> <!-- Output for SQL -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('IDE')">IDE</button>
+      <div id="output-IDE" class="output"></div> <!-- Output for IDE -->
+    </div>
+  <div class="button-container">
+      <button onclick="showInfo('API')">API</button>
+      <div id="output-API" class="output"></div> <!-- Output for API -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('SDK')">SDK</button>
+      <div id="output-SDK" class="output"></div> <!-- Output for SDK -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('GUI')">GUI</button>
+      <div id="output-GUI" class="output"></div> <!-- Output for GUI -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('CLI')">CLI</button>
+      <div id="output-CLI" class="output"></div> <!-- Output for CLI -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('UI')">UI</button>
+      <div id="output-UI" class="output"></div> <!-- Output for UI -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('UX')">UX</button>
+      <div id="output-UX" class="output"></div> <!-- Output for UX -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('OS')">OS</button>
+      <div id="output-OS" class="output"></div> <!-- Output for OS -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('BIOS')">BIOS</button>
+      <div id="output-BIOS" class="output"></div> <!-- Output for BIOS -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('UEFI')">UEFI</button>
+      <div id="output-UEFI" class="output"></div> <!-- Output for UEFI -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('ACPI')">ACPI</button>
+      <div id="output-ACPI" class="output"></div> <!-- Output for ACPI -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('SATA')">SATA</button>
+      <div id="output-SATA" class="output"></div> <!-- Output for SATA -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('RAID')">RAID</button>
+      <div id="output-RAID" class="output"></div> <!-- Output for RAID -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('DNSSEC')">DNSSEC</button>
+      <div id="output-DNSSEC" class="output"></div> <!-- Output for DNSSEC -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('SFTP')">SFTP</button>
+      <div id="output-SFTP" class="output"></div> <!-- Output for SFTP -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('SSH')">SSH</button>
+      <div id="output-SSH" class="output"></div> <!-- Output for SSH -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('TLS')">TLS</button>
+      <div id="output-TLS" class="output"></div> <!-- Output for TLS -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('VOIP')">VOIP</button>
+      <div id="output-VOIP" class="output"></div> <!-- Output for VOIP -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('VLAN')">VLAN</button>
+      <div id="output-VLAN" class="output"></div> <!-- Output for VLAN -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('NAT')">NAT</button>
+      <div id="output-NAT" class="output"></div> <!-- Output for NAT -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('DNSBL')">DNSBL</button>
+      <div id="output-DNSBL" class="output"></div> <!-- Output for DNSBL -->
+    </div>
+   <div class="button-container">
+      <button onclick="showInfo('SMTPS')">SMTPS</button>
+      <div id="output-SMTPS" class="output"></div> <!-- Output for SMTPS -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('XMPP')">XMPP</button>
+      <div id="output-XMPP" class="output"></div> <!-- Output for XMPP -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('JSON')">JSON</button>
+      <div id="output-JSON" class="output"></div> <!-- Output for JSON -->
+    </div>
+     <div class="button-container">
+      <button onclick="showInfo('XML')">XML</button>
+      <div id="output-XML" class="output"></div> <!-- Output for XML -->
+    </div>
+     <div class="button-container">
+      <button onclick="showInfo('AJAX')">AJAX</button>
+      <div id="output-AJAX" class="output"></div> <!-- Output for AJAX -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('APIPA')">APIPA</button>
+      <div id="output-APIPA" class="output"></div> <!-- Output for APIPA -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('DHCP')">DHCP</button>
+      <div id="output-DHCP" class="output"></div> <!-- Output for DHCP -->
+    </div>
+     <div class="button-container">
+      <button onclick="showInfo('MAC')">MAC</button>
+      <div id="output-MAC" class="output"></div> <!-- Output for MAC -->
+    </div>
+     <div class="button-container">
+      <button onclick="showInfo('MIME')">MIME</button>
+      <div id="output-MIME" class="output"></div> <!-- Output for MIME -->
+    </div>
+    <div class="button-container">
+      <button onclick="showInfo('NTP')">NTP</button>
+      <div id="output-NTP" class="output"></div> <!-- Output for NTP -->
+    </div>
+     <div class="button-container">
+      <button onclick="showInfo('POP3')">POP3</button>
+      <div id="output-POP3" class="output"></div> <!-- Output for POP3 -->
+    </div>
+    
+  </div>
+
+</body>
+</html>

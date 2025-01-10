@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+}
+header{
+text-align:center;
+}
+
+
+
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+.container{
+margin:20px;
+}
+.buttons-container {
+    position:relative;
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items:center;
+    margin-bottom:10px;
+}
+.output{
+margin-left:300px;
+font-weight:bold;
+}
+
+button {
+    
+    text-align:right;
+    width: 50px;
+    padding-right: 10px;
+    background: linear-gradient(to right, purple, magenta);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom:5px;
+    text-align:center;
+    
+    
+}
+
+button:hover+.abbreviation,button:focus+.abbreviation {
+    display:block;
+    opacity: 0.8;
+}
+
+.abbreviation-display {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position:obsolute;
+    left:110%;
+    top:50%;
+}
